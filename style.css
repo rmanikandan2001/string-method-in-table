@@ -1,0 +1,15 @@
+table,tr,td,th{
+	border:1px solid blue;
+	margin:auto;
+	text-align:center;
+	font-size:20px;
+	height:100px;
+}
+table,td,th{
+	width:50%;
+	background-color:yellow;
+	color:black;
+	}
+h3{
+	color:black;
+}

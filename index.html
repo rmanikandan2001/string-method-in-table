@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>String Methods in Table</title>
+			<link rel="stylesheet" href="style.css">
+		</head>
+		<body>
+			<table>
+				<caption><h3>String Methods in Table</h3></caption>
+				
+					<tr>
+						<th>method</th>
+						<th>programm/code</th>
+						<th>output</th>
+					</tr>
+					<tr>
+						<td>string length()<p>returns the length of a string</p></td>
+						
+						<td>
+							let arr = ";      <br>
+							console.log(arr.length);
+						</td>
+						
+						<td>output : 14</td>
+					</tr>
+					
+					
+					<tr>
+						<td>string slice()<p>returns the extracted part in a new string</p></td>
+						
+						<td>
+							let arr = "i am manikandan";      <br>
+							console.log(arr.slice(6,14));
+						</td>
+						
+						<td>output : Manikandan</td>
+					</tr>
+					
+					
+					<tr>
+						<td>string substring()<p>(start, end)</p></td>
+						
+						<td>
+							let arr = 'i am Manikandan';          	<br>
+							let array = arr.substring(5,11);		<br>
+							console.log(array);
+						</td>
+						
+						<td>output : Manikandan</td>
+					</tr>
+					
+					
+					<tr>
+						<td>string substr()<p>(start, length)</p></td>
+						
+						<td>
+							let arr = 'i am Manikandan';          	<br>
+							let array = arr.substr(5,6);			<br>
+							console.log(array);
+						</td>
+						
+						<td>output : Manikandan</td>
+					</tr>
+					
+					
+					<tr>
+						<td>string replace()<p>replaces a specified value with another value in a string</p></td>
+						
+						<td>
+							let arr = "i am vijay";								<br>
+							let array = arr.replace("vijay","Manikandan");		<br>
+							console.log(array);
+						</td>
+						
+						<td>output :Manikandan</td>
+					</tr>
+					
+					
+					<tr>
+						<td>string replaceAll()<p>If the parameter is a regular expression, the global flag (g) must be set, otherwise a TypeError is thrown.</p></td>
+						
+						<td>
+							let arr = "i am Manikandan";										<br>
+							abc = arr.replaceAll("i am Manikandan","I Am Manikandan");		<br>
+							console.log(abc);
+						</td>
+						
+						<td>output : I Am Manikandan</td>
+					</tr>
+					
+					
+					<tr>
+						<td>string toUpperCase()<p>A string is converted to upper case</p></td>
+						
+						<td>
+							let arr = "i am Manikandan";					<br>
+							array = arr.toUpperCase();					<br>
+							console.log(array);
+						</td>
+						
+						<td>output : I AM MANIKANDAN</td>
+					</tr>
+					
+					
+					<tr>
+						<td>string toLowerCase()<p>A string is converted to lower case</p></td>
+						
+						<td>
+							let arr = "I AM MANIKANDAN";					<br>
+							array = arr.toLowerCase();					<br>
+							console.log(array);
+						</td>
+						
+						<td>output : i am Manikandan</td>
+					</tr>
+					
+					
+					<tr>
+						<td>string concat()<p>joins two or more strings</p></td>
+						
+						<td>
+							let arr = "i am";							<br>
+							let arr1 = "Manikandan";						<br>
+							let arr2 = arr.concat(" ",arr1);			<br>
+							console.log(arr2);
+						</td>
+						
+						<td>output : i am Manikandan</td>
+					</tr>
+					
+					
+					<tr>
+						<td>string trim()<p> removes whitespace from both sides of a string</p></td>
+						
+						<td>
+							let arr = "    i am Manikandan     ";        <br>
+							console.log(arr.trim());
+						</td>
+						
+						<td>output : i am Manikandan</td>
+					</tr>
+					
+					
+					<tr>
+						<td>string trimStart()<p>removes the whitespace only from the start of a string</p></td>
+						
+						<td>
+							let arr = "      Manikandan       ";       	<br>
+							let array = arr.trimStart();					<br>
+							console.log(array);
+						</td>
+						
+						<td>output : Manikandan</td>
+					</tr>
+					
+					
+					<tr>
+						<td>string trimEnd()<p>removes the whitespace only from the End of a string</p></td>
+						
+						<td>
+							let arr = "      Manikandan      ";       	<br>
+							let array = arr.trimEnd();					<br>
+							console.log(array);
+						</td>
+						
+						<td>output : Manikandan</td>
+					</tr>
+					
+					
+					<tr>
+						<td>string padStart()<p>its a string method so first convert a number to string</p></td>
+						
+						<td>
+							let arr = '5';
+							let arr1 = arr.toString();
+							array = arr.padStart(3,"43");
+							console.log(array);
+						</td>
+						
+						<td>output : 435</td>
+					</tr>
+					
+					
+					<tr>
+						<td>string padEnd()<p>its a string method so first convert a number to string</p></td>
+						
+						<td>
+							let arr = '5';
+							let arr1 = arr.toString();
+							array = arr.padEnd(3,"43");
+							console.log(array);
+						</td>
+						
+						<td>output : 543</td>
+					</tr>
+					
+					<tr>
+						<td>string charAt()<p>returns the character at a specified index (position) in a string</p></td>
+						
+						<td>
+							let arr = "Manikandan";					<br>
+							console.log(arr.charAt(8));
+						</td>
+						
+						<td>output : h</td>
+						
+					</tr>
+					
+					
+					<tr>
+						<td>string charCodeAt()<p>returns the unicode of the character at a specified index in a string</p></td>
+						
+						<td>
+							let arr = "Manikandan";					<br>
+							console.log(arr.charCodeAt(8));
+						</td>
+						
+						<td>output : 104</td>
+						
+					</tr>
+					
+					
+					<tr>
+						<td>string property access[]<p>ECMAScript 5 (2009) allows property access [ ] on strings</p></td>
+						
+						<td>
+							let arr = "Manikandan";					<br>
+							console.log(arr.[4]);
+						</td>
+						
+						<td>output : a</td>
+						
+					</tr>
+					
+					
+					<tr>
+						<td>string split<p>A string can be converted to an array with the split() method</p></td>
+						
+						<td>
+							let arr = "M,a,n,i,k,a,n,d,a,n";					<br>
+							console.log(arr.split(","));
+						</td>
+						
+						<td>output : [
+								  M,a,n,i,k,a,n,d,a,n
+										]
+						</td>
+						
+					</tr>
+			</table>	
+		</body>
+	</html>
